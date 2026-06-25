@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Cub Scout Pack 776</title>
+    <style>
+        :root { --blue: #003087; --gold: #F1C40F; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        header { background: var(--blue); color: white; padding: 1rem 0; position: sticky; top: 0; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        .logo span { color: var(--gold); }
+        .nav-links { display: flex; gap: 1.5rem; }
+        .nav-links a { color: white; text-decoration: none; }
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        h1 { color: var(--blue); text-align: center; margin-bottom: 2rem; }
+        .gallery-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;
+        }
+        .gallery-item img {
+            width: 100%; height: 250px; object-fit: cover; border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cub Scout Pack <span>776</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="signup.html">Join Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="documents.html">Documents</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Our Adventures</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://picsum.photos/id/1015/600/400" alt="Hiking"><p>Hiking at Lake Conroe</p></div>
+            <div class="gallery-item"><img src="https://picsum.photos/id/201/600/400" alt="Camping"><p>Campout 2025</p></div>
+            <div class="gallery-item"><img src="https://picsum.photos/id/866/600/400" alt="Pinewood"><p>Pinewood Derby</p></div>
+            <div class="gallery-item"><img src="https://picsum.photos/id/133/600/400" alt="Service"><p>Community Service</p></div>
+        </div>
+        <p style="text-align:center;margin-top:2rem;">More photos coming soon! Send us your favorites.</p>
+    </section>
+
+    <footer style="background: var(--blue); color: white; text-align: center; padding: 2rem;">
+        <p>&copy; Cub Scout Pack 776</p>
+    </footer>
+</body>
+</html>

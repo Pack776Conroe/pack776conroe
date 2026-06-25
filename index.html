@@ -32,16 +32,23 @@
             gap: 15px;
         }
         .logo-img {
-            height: 80px;
+            height: 85px;
             width: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
-        .text-logo { 
-            font-size:1.8rem; 
-            font-weight:bold; 
+        .text-logo {
+            line-height: 1.1;
         }
-        .text-logo span { color:var(--gold); }
+        .text-logo-main {
+            font-size: 1.85rem;
+            font-weight: bold;
+        }
+        .text-logo-main span { color: var(--gold); }
+        .text-logo-sub {
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
         .nav-links a { 
             color:white; 
             margin:0 15px; 
@@ -55,14 +62,10 @@
                        url('https://picsum.photos/id/1015/1920/700') center/cover; 
             color:white; 
             text-align:center; 
-            padding:120px 20px 100px; 
+            padding:130px 20px 110px; 
         }
-        .hero h1 { font-size:3rem; margin-bottom:1rem; }
-        .hero p { 
-            font-size:1.35rem; 
-            max-width:900px; 
-            margin:0 auto 2rem; 
-        }
+        .hero h1 { font-size:2.9rem; margin-bottom:1rem; }
+        .hero p { font-size:1.35rem; max-width:900px; margin:0 auto 2rem; }
         
         section { padding:60px 20px; max-width:1200px; margin:0 auto; }
         h2 { color:var(--blue); text-align:center; margin-bottom:2.5rem; }
@@ -80,9 +83,9 @@
         }
 
         @media (max-width: 768px) {
-            .hero p { font-size: 1.2rem; white-space: normal; }
+            .logo-img { height: 70px; }
             .hero h1 { font-size: 2.4rem; }
-            .logo-img { height: 65px; }
+            .text-logo-main { font-size: 1.65rem; }
         }
     </style>
 </head>
@@ -91,7 +94,10 @@
         <nav>
             <div class="logo-container">
                 <img src="pack776-logo.png" alt="Cub Scout Pack 776 Logo" class="logo-img">
-                <div class="text-logo">Pack <span>776</span></div>
+                <div class="text-logo">
+                    <div class="text-logo-main">Cub Scout Pack <span>776</span></div>
+                    <div class="text-logo-sub">Conroe, Texas</div>
+                </div>
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
@@ -105,16 +111,16 @@
 
     <div class="hero">
         <h1>Welcome to Pack 776!</h1>
-        <p>Conroe, Texas • Fun, Adventure &amp; Leadership for Boys &amp; Girls in Grades K-5</p>
+        <p>Conroe, Texas • Fun, Adventure & Leadership for Boys & Girls in Grades K-5</p>
         <a href="signup.html" class="btn">Join Today!</a>
     </div>
 
     <section style="background:#f8f9fa;">
         <h2>About Our Pack</h2>
         <div class="grid">
-            <div class="card"><h3>Fun Adventures</h3><p>Camping, hikes, Pinewood Derby &amp; more!</p></div>
-            <div class="card"><h3>Strong Values</h3><p>Scout Oath &amp; Law • Character building</p></div>
-            <div class="card"><h3>All Families Welcome</h3><p>Boys &amp; girls in Conroe area</p></div>
+            <div class="card"><h3>Fun Adventures</h3><p>Camping, hikes, Pinewood Derby & more!</p></div>
+            <div class="card"><h3>Strong Values</h3><p>Scout Oath & Law • Character building</p></div>
+            <div class="card"><h3>All Families Welcome</h3><p>Boys & girls in Conroe area</p></div>
         </div>
     </section>
 

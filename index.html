@@ -9,11 +9,45 @@
         :root { --blue: #003087; --gold: #F1C40F; }
         * { margin:0; padding:0; box-sizing:border-box; }
         body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
-        header { background:var(--blue); color:white; padding:1rem 0; position:sticky; top:0; z-index:100; }
-        nav { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem; flex-wrap:wrap; }
-        .logo { font-size:1.8rem; font-weight:bold; }
-        .logo span { color:var(--gold); }
-        .nav-links a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        header { 
+            background:var(--blue); 
+            color:white; 
+            padding:1rem 0; 
+            position:sticky; 
+            top:0; 
+            z-index:100; 
+        }
+        nav { 
+            max-width:1200px; 
+            margin:0 auto; 
+            display:flex; 
+            justify-content:space-between; 
+            align-items:center; 
+            padding:0 2rem; 
+            flex-wrap:wrap; 
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-img {
+            height: 80px;
+            width: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .text-logo { 
+            font-size:1.8rem; 
+            font-weight:bold; 
+        }
+        .text-logo span { color:var(--gold); }
+        .nav-links a { 
+            color:white; 
+            margin:0 15px; 
+            text-decoration:none; 
+            font-weight:500; 
+        }
         .nav-links a:hover { color:var(--gold); }
         
         .hero { 
@@ -21,16 +55,13 @@
                        url('https://picsum.photos/id/1015/1920/700') center/cover; 
             color:white; 
             text-align:center; 
-            padding:140px 20px 100px; 
+            padding:120px 20px 100px; 
         }
         .hero h1 { font-size:3rem; margin-bottom:1rem; }
         .hero p { 
             font-size:1.35rem; 
             max-width:900px; 
             margin:0 auto 2rem; 
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
         }
         
         section { padding:60px 20px; max-width:1200px; margin:0 auto; }
@@ -49,18 +80,19 @@
         }
 
         @media (max-width: 768px) {
-            .hero p { 
-                white-space: normal; 
-                font-size: 1.2rem; 
-            }
+            .hero p { font-size: 1.2rem; white-space: normal; }
             .hero h1 { font-size: 2.4rem; }
+            .logo-img { height: 65px; }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Cub Scout Pack <span>776</span></div>
+            <div class="logo-container">
+                <img src="pack776-logo.png" alt="Cub Scout Pack 776 Logo" class="logo-img">
+                <div class="text-logo">Pack <span>776</span></div>
+            </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="signup.html">Join Us</a>

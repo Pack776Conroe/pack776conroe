@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery - Cub Scout Pack 776</title>
+    <meta name="description" content="Photo Gallery - Cub Scout Pack 776 Conroe TX">
+    <title>Gallery - Cub Scout Pack 776 | Conroe, TX</title>
     <style>
         :root { --blue: #003087; --gold: #F1C40F; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-        header { background: var(--blue); color: white; padding: 1rem 0; position: sticky; top: 0; }
-        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
-        .logo { font-size: 1.5rem; font-weight: bold; }
-        .logo span { color: var(--gold); }
-        .nav-links { display: flex; gap: 1.5rem; }
-        .nav-links a { color: white; text-decoration: none; }
-        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-        h1 { color: var(--blue); text-align: center; margin-bottom: 2rem; }
-        .gallery-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
+        header { background:var(--blue); color:white; padding:1rem 0; position:sticky; top:0; z-index:100; }
+        nav { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0 2rem; flex-wrap:wrap; }
+        .logo-container { display:flex; align-items:center; gap:15px; }
+        .logo-img { height:85px; width:auto; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.3); background:var(--blue); padding:4px; }
+        .text-logo { line-height:1.1; }
+        .text-logo-main { font-size:1.85rem; font-weight:bold; }
+        .text-logo-main span { color:var(--gold); }
+        .text-logo-sub { font-size:1.05rem; opacity:0.95; }
+        .nav-links a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
+        .nav-links a:hover { color:var(--gold); }
+        section { padding:60px 20px; max-width:1200px; margin:0 auto; }
+        h2 { color:var(--blue); text-align:center; margin-bottom:2.5rem; }
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 15px; 
         }
-        .gallery-item img {
-            width: 100%; height: 250px; object-fit: cover; border-radius: 8px;
+        .gallery-grid img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Cub Scout Pack <span>776</span></div>
+            <div class="logo-container">
+                <img src="pack776-logo.png" alt="Cub Scout Pack 776 Logo" class="logo-img">
+                <div class="text-logo">
+                    <div class="text-logo-main">Cub Scout Pack <span>776</span></div>
+                    <div class="text-logo-sub">Conroe, Texas</div>
+                </div>
+            </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="signup.html">Join Us</a>
@@ -39,18 +56,21 @@
     </header>
 
     <section>
-        <h1>Our Adventures</h1>
+        <h2>Photo Gallery</h2>
+        <p style="text-align:center; margin-bottom:30px;">Memories from our adventures!</p>
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://picsum.photos/id/1015/600/400" alt="Hiking"><p>Hiking at Lake Conroe</p></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/201/600/400" alt="Camping"><p>Campout 2025</p></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/866/600/400" alt="Pinewood"><p>Pinewood Derby</p></div>
-            <div class="gallery-item"><img src="https://picsum.photos/id/133/600/400" alt="Service"><p>Community Service</p></div>
+            <img src="https://picsum.photos/id/1015/600/400" alt="Camping">
+            <img src="https://picsum.photos/id/201/600/400" alt="Pinewood Derby">
+            <img src="https://picsum.photos/id/133/600/400" alt="Hiking">
+            <img src="https://picsum.photos/id/866/600/400" alt="Pack Meeting">
+            <img src="https://picsum.photos/id/292/600/400" alt="Outing">
+            <img src="https://picsum.photos/id/1016/600/400" alt="Scouts">
         </div>
-        <p style="text-align:center;margin-top:2rem;">More photos coming soon! Send us your favorites.</p>
+        <p style="text-align:center; margin-top:30px; color:#666;">Replace these placeholder images with your real pack photos later.</p>
     </section>
 
-    <footer style="background: var(--blue); color: white; text-align: center; padding: 2rem;">
-        <p>&copy; Cub Scout Pack 776</p>
+    <footer style="background:var(--blue); color:white; text-align:center; padding:40px 20px;">
+        <p>&copy; 2026 Cub Scout Pack 776, Conroe, TX • Sam Houston Area Council</p>
     </footer>
 </body>
 </html>

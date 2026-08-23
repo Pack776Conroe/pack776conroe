@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Photo Gallery - Cub Scout Pack 776 Conroe TX">
+    <meta name="description" content="Photo Gallery - Cub Scout Pack 776 Adventures">
     <title>Gallery - Cub Scout Pack 776 | Conroe, TX</title>
     <style>
         :root { --blue: #003087; --gold: #F1C40F; }
@@ -19,19 +19,60 @@
         .text-logo-sub { font-size:1.05rem; opacity:0.95; }
         .nav-links a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
         .nav-links a:hover { color:var(--gold); }
-        section { padding:60px 20px; max-width:1200px; margin:0 auto; }
-        h2 { color:var(--blue); text-align:center; margin-bottom:2.5rem; }
-        .gallery-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 15px; 
+
+        section { padding:50px 20px; max-width:1100px; margin:0 auto; }
+        h1 { color:var(--blue); text-align:center; margin-bottom:1rem; font-size:2.4rem; }
+        .intro { text-align:center; margin-bottom:3rem; color:#555; }
+
+        .event {
+            margin-bottom:3.5rem;
+            background:#f8f9fa;
+            border-radius:12px;
+            padding:1.8rem;
+            box-shadow:0 4px 12px rgba(0,0,0,0.08);
         }
-        .gallery-grid img { 
-            width: 100%; 
-            height: 220px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        .event h2 {
+            color:var(--blue);
+            font-size:1.5rem;
+            margin-bottom:1.2rem;
+            border-left:5px solid var(--gold);
+            padding-left:12px;
+        }
+        .photo-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+            gap:1rem;
+        }
+        .photo-grid img {
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:8px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.12);
+            transition: transform 0.2s;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.03);
+        }
+        .placeholder {
+            background:#ddd;
+            height:200px;
+            border-radius:8px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:#666;
+            font-size:0.95rem;
+            text-align:center;
+            padding:1rem;
+        }
+
+        footer { background:var(--blue); color:white; text-align:center; padding:40px 20px; margin-top:20px; }
+
+        @media (max-width: 768px) {
+            .logo-img { height:70px; }
+            .text-logo-main { font-size:1.5rem; }
+            h1 { font-size:1.9rem; }
         }
     </style>
 </head>
@@ -56,21 +97,95 @@
     </header>
 
     <section>
-        <h2>Photo Gallery</h2>
-        <p style="text-align:center; margin-bottom:30px;">Memories from our adventures!</p>
-        <div class="gallery-grid">
-            <img src="https://picsum.photos/id/1015/600/400" alt="Camping">
-            <img src="https://picsum.photos/id/201/600/400" alt="Pinewood Derby">
-            <img src="https://picsum.photos/id/133/600/400" alt="Hiking">
-            <img src="https://picsum.photos/id/866/600/400" alt="Pack Meeting">
-            <img src="https://picsum.photos/id/292/600/400" alt="Outing">
-            <img src="https://picsum.photos/id/1016/600/400" alt="Scouts">
+        <h1>Photo Gallery</h1>
+        <p class="intro">Memories from our adventures with Cub Scout Pack 776!</p>
+
+        <!-- USS Lexington -->
+        <div class="event">
+            <h2>USS Lexington Overnight Campout</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it lexington1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it lexington2.jpg)</div>
+            </div>
         </div>
-        <p style="text-align:center; margin-top:30px; color:#666;">Replace these placeholder images with your real pack photos later.</p>
+
+        <!-- Pinewood Derby -->
+        <div class="event">
+            <h2>Pinewood Derby</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it pinewood1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it pinewood2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Spring Campout -->
+        <div class="event">
+            <h2>Spring Campout</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it spring-camp1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it spring-camp2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Raingutter Regatta -->
+        <div class="event">
+            <h2>Raingutter Regatta</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it regatta1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it regatta2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Pushmobiles Race -->
+        <div class="event">
+            <h2>Pushmobiles Race</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it pushmobile1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it pushmobile2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Advancement Ceremony -->
+        <div class="event">
+            <h2>Advancement Ceremony</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it advancement1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it advancement2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Haunted Hike -->
+        <div class="event">
+            <h2>Haunted Hike</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it haunted1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it haunted2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- NASA Overnight -->
+        <div class="event">
+            <h2>NASA Overnight Campout</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it nasa1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it nasa2.jpg)</div>
+            </div>
+        </div>
+
+        <!-- Fire Department Visit -->
+        <div class="event">
+            <h2>Conroe Fire Department Visit</h2>
+            <div class="photo-grid">
+                <div class="placeholder">Add photo here<br>(name it firedept1.jpg)</div>
+                <div class="placeholder">Add photo here<br>(name it firedept2.jpg)</div>
+            </div>
+        </div>
+
     </section>
 
-    <footer style="background:var(--blue); color:white; text-align:center; padding:40px 20px;">
-        <p>&copy; 2026 Cub Scout Pack 776, Conroe, TX • Sam Houston Area Council</p>
+    <footer>
+        <p>&copy; 2026 Cub Scout Pack 776, Conroe, TX • Chartered by St. James Episcopal Church</p>
+        <p>Sam Houston Area Council</p>
     </footer>
 </body>
 </html>

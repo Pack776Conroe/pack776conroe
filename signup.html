@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join Cub Scout Pack 776 in Conroe, TX">
+    <meta name="description" content="Join Cub Scout Pack 776 in Conroe, TX – Boys and Girls grades K-5 welcome">
     <title>Join Us - Cub Scout Pack 776 | Conroe, TX</title>
     <style>
         :root { --blue: #003087; --gold: #F1C40F; }
@@ -19,10 +19,29 @@
         .text-logo-sub { font-size:1.05rem; opacity:0.95; }
         .nav-links a { color:white; margin:0 15px; text-decoration:none; font-weight:500; }
         .nav-links a:hover { color:var(--gold); }
-        section { padding:60px 20px; max-width:1200px; margin:0 auto; }
-        h2 { color:var(--blue); text-align:center; margin-bottom:2.5rem; }
-        .content { max-width:800px; margin:0 auto; }
-        .btn { background:var(--gold); color:var(--blue); padding:14px 32px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block; }
+        section { padding:60px 20px; max-width:900px; margin:0 auto; }
+        h1 { color:var(--blue); text-align:center; margin-bottom:1.5rem; font-size:2.4rem; }
+        .content { background:#f8f9fa; padding:2.5rem; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.08); }
+        .content p { margin-bottom:1.2rem; font-size:1.1rem; }
+        .btn {
+            display:inline-block;
+            background:var(--gold);
+            color:var(--blue);
+            padding:16px 36px;
+            border-radius:6px;
+            text-decoration:none;
+            font-weight:bold;
+            font-size:1.15rem;
+            margin-top:1.5rem;
+            transition: all 0.2s;
+        }
+        .btn:hover { background:#e0b000; transform:translateY(-2px); }
+        footer { background:var(--blue); color:white; text-align:center; padding:40px 20px; margin-top:40px; }
+        @media (max-width: 768px) {
+            .logo-img { height:70px; }
+            .text-logo-main { font-size:1.5rem; }
+            h1 { font-size:1.9rem; }
+        }
     </style>
 </head>
 <body>
@@ -46,24 +65,27 @@
     </header>
 
     <section>
+        <h1>Join Cub Scout Pack 776</h1>
+        
         <div class="content">
-            <h2>How to Join Pack 776</h2>
-            <p><strong>We're always welcoming new families!</strong></p>
-            <h3>Eligibility</h3>
-            <p>Boys and girls in Kindergarten through 5th grade.</p>
+            <p>Boys and Girls grades K-5 are welcome to come and participate in various Pack activities, including Fall and Spring campouts, Pinewood Derby, Blue/Gold celebration, religious emblems, outdoor activities, service projects, and more. Meetings are most Sundays 4:00-5:00 PM with a monthly Pack meeting and multiple Den meetings from August-May. Pack 776 hosts several summer opportunities. If you "Request More Information," you will receive an email with more specific information.</p>
             
-            <h3>Next Steps</h3>
-            <ol>
-                <li>Contact us using the form below or email</li>
-                <li>Attend a pack meeting as a guest</li>
-                <li>Complete registration through the Boy Scouts of America website</li>
-            </ol>
+            <div style="text-align:center;">
+                <a href="https://beascout.scouting.org/units/591d36f7-ffe7-4654-be41-4ac2080677da" 
+                   class="btn" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    Request More Information / Sign Up
+                </a>
+            </div>
             
-            <a href="contact.html" class="btn">Contact Us to Join</a>
+            <p style="margin-top:2rem; font-size:0.95rem; color:#555; text-align:center;">
+                You will be taken to the official Scouting America website for Pack 776.
+            </p>
         </div>
     </section>
 
-    <footer style="background:var(--blue); color:white; text-align:center; padding:40px 20px;">
+    <footer>
         <p>&copy; 2026 Cub Scout Pack 776, Conroe, TX • Sam Houston Area Council</p>
     </footer>
 </body>

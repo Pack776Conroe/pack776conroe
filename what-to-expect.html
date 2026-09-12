@@ -40,28 +40,19 @@
             padding:1.5rem;
             text-align:center;
         }
-        .rank-badge {
-            width:70px;
-            height:70px;
-            border-radius:50%;
+        .rank-logo {
+            width:110px;
+            height:110px;
+            object-fit:contain;
             margin:0 auto 1rem;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-weight:bold;
-            color:white;
-            font-size:0.9rem;
-            text-align:center;
-            line-height:1.1;
+            display:block;
         }
-        .lion { background:#f4a261; }
-        .tiger { background:#e76f51; }
-        .wolf { background:#2a9d8f; }
-        .bear { background:#264653; }
-        .webelos { background:#003087; }
-        .aol { background:#e9c46a; color:#333; }
+        .rank-logo.aol {
+            width:160px;
+            height:70px;
+        }
 
-        footer { background:var(--blue); color:white; text-align:center; padding:40px 20px; margin-top:40px; }
+        footer { background:var(--blue); color:white; text-align:center; padding:40px 20px; margin-top:20px; }
 
         @media (max-width: 768px) {
             .logo-img { height:70px; }
@@ -80,86 +71,59 @@
                     <div class="text-logo-sub">Conroe, Texas</div>
                 </div>
             </div>
-<div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="signup.html">Join Us</a>
-    <a href="what-to-expect.html">What to Expect</a>
-    <a href="gallery.html">Our Adventures</a>
-    <a href="documents.html">Documents</a>
-    <a href="contact.html">Leadership</a>
-</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="signup.html">Join Us</a>
+                <a href="what-to-expect.html">What to Expect</a>
+                <a href="gallery.html">Our Adventures</a>
+                <a href="documents.html">Documents</a>
+                <a href="contact.html">Leadership</a>
+            </div>
         </nav>
     </header>
 
     <section>
         <h1>What to Expect</h1>
-        <p>When you join Pack 776, we want you and your Scout to feel welcome and prepared. Here’s a quick overview of how our program works.</p>
 
-        <h2>Den Meetings</h2>
-        <p>Dens meet on Sundays from 4:00–5:00 PM and focus on age-appropriate adventures. Den meetings include:</p>
+        <h2>How Cub Scouting Works</h2>
+        <p>Cub Scouts is a year-round family program for boys and girls in kindergarten through 5th grade. Scouts belong to a small Den with kids in the same grade, and all Dens come together as Pack 776 for Pack meetings, campouts, and special events.</p>
         <ul>
-            <li>Hands-on activities and skill building</li>
-            <li>Games, crafts, and outdoor fun</li>
-            <li>Working toward rank requirements and adventure loops/pins</li>
-            <li>Teamwork and leadership opportunities</li>
+            <li><strong>Den Meetings:</strong> Smaller group meetings focused on skills, games, and adventures.</li>
+            <li><strong>Pack Meetings:</strong> The whole Pack gathers once a month for recognition, fun, and family activities.</li>
+            <li><strong>Adventures:</strong> Hands-on activities that help Scouts earn rank and learn new skills.</li>
         </ul>
-        <p>Younger Dens (Lion and Tiger) require a parent or adult partner to participate with the Scout during our meetings.</p>
-        
-        <h2>Pack Meetings</h2>
-        <p>Pack 776 meets most Sundays throughout the Conroe ISD school year. While Dens meet weekly, at lease once a month, all Dens come together for a Pack Meeting which indlude a program offered across all ages. During our meetings you can expect:</p>
-        <ul>
-            <li>Opening and closing flag ceremonies</li>
-            <li>Reciting the Scout Oath and Law and shouting our Scout Motto, "DO YOUR BEST!"</li>
-            <li>Awards and recognition for every Scout rank</li>
-            <li>Fun activities and songs led by Den and Pack Leaders</li>
-            <li>Information about upcoming events</li>
-            <li>A chance for the whole family to share in a Pack-wide activity and lots of the Scouting spirit</li>
-        </ul>
-        <p>Scouts are expected to wear their official Field Uniform to all Pack Meetings, unless otherwise instructed to wear their pack shirt.</p>
 
-        <h2>Campouts & Special Events</h2>
-        <p>Pack 776 offers exciting outdoor and special experiences throughout the year, including:</p>
-        <ul>
-            <li>Fall and Spring campouts</li>
-            <li>Special overnight adventures (examples of what we've done include camping overnight at the Houston Zoo, NASA, baseball games, the USS Lexington and more)</li>
-            <li>Pinewood Derby and Raingutter Regatta</li>
-            <li>Blue & Gold celebration</li>
-            <li>Community service projects, participating in the Conroe Christmas Parade and 4th of July Parade</li>
-            <li>Summer opportunities</li>
-        </ul>
-        <p>A parent or guardian is required to accompany Cub Scouts on overnight campouts.</p>
-
-        <h2>Cub Scout Ranks</h2>
-        <p>Cub Scouts progress through ranks based on grade level. Each rank focuses on fun adventures that build character, citizenship, fitness, personal safety, and leadership.</p>
+        <h2>Ranks</h2>
+        <p>Scouts work toward a rank based on their grade. Each rank has its own adventures and badge.</p>
 
         <div class="rank-grid">
             <div class="rank-card">
-                <div class="rank-badge lion">LION</div>
+                <img src="lion.png" alt="Lion rank badge" class="rank-logo">
                 <h3>Lion</h3>
-                <p><strong>Kindergarten</strong><br>Introduction to Scouting with simple, fun adventures done with an adult partner.</p>
+                <p><strong>Kindergarten</strong><br>A fun introduction to Scouting with simple adventures and lots of family involvement.</p>
             </div>
             <div class="rank-card">
-                <div class="rank-badge tiger">TIGER</div>
+                <img src="tiger.png" alt="Tiger rank badge" class="rank-logo">
                 <h3>Tiger</h3>
-                <p><strong>1st Grade</strong><br>Adventures focused on exploration, teamwork, and trying new things with a parent or adult partner.</p>
+                <p><strong>1st Grade</strong><br>Scouts begin exploring the outdoors, helping others, and trying new things with a parent or adult partner.</p>
             </div>
             <div class="rank-card">
-                <div class="rank-badge wolf">WOLF</div>
+                <img src="wolf.png" alt="Wolf rank badge" class="rank-logo">
                 <h3>Wolf</h3>
                 <p><strong>2nd Grade</strong><br>Outdoor skills, community awareness, and growing independence through required and elective adventures.</p>
             </div>
             <div class="rank-card">
-                <div class="rank-badge bear">BEAR</div>
+                <img src="bear.png" alt="Bear rank badge" class="rank-logo">
                 <h3>Bear</h3>
                 <p><strong>3rd Grade</strong><br>More challenging adventures that build responsibility, outdoor knowledge, and leadership.</p>
             </div>
             <div class="rank-card">
-                <div class="rank-badge webelos">WEBELOS</div>
+                <img src="webelos.png" alt="Webelos rank badge" class="rank-logo">
                 <h3>Webelos</h3>
                 <p><strong>4th Grade</strong><br>Preparation for Scouts BSA with more advanced outdoor skills and leadership opportunities.</p>
             </div>
             <div class="rank-card">
-                <div class="rank-badge aol">AOL</div>
+                <img src="aol.png" alt="Arrow of Light rank badge" class="rank-logo aol">
                 <h3>Arrow of Light</h3>
                 <p><strong>5th Grade</strong><br>The highest rank in Cub Scouting. Completing this prepares Scouts to bridge into a Scouts BSA Troop.</p>
             </div>
